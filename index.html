@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark's first website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Meet Shiro the Cat and learn why fostering and adopting kittens can make a difference.">
+    <meta name="author" content="Mark Vouga">
+    <title>Home | Shiro the Cat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- Hello World! I am Mark Vouga, and I am learning how to create a website.
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div>
+                <p class="eyebrow">A little website with a big heart</p>
+                <h1>Shiro the Cat <span aria-hidden="true">🐾</span></h1>
+                <p class="tagline">Helping kittens find loving forever homes.</p>
+            </div>
+            <div class="header-cat" aria-hidden="true">🐈</div>
+        </header>
+
+        <div class="page-layout">
+            <nav class="site-nav" aria-label="Main navigation">
+                <h2>Explore the site</h2>
+                <ul>
+                    <li><a class="active" aria-current="page" href="index.html">Home</a></li>
+                    <li><a href="shiro.html">Shiro</a></li>
+                    <li><a href="foster.html">Foster Kittens</a></li>
+                    <li><a href="history.html">History of Cats</a></li>
+                    <li><a href="guide.html">A Guide to Cats</a></li>
+                </ul>
+                <p class="nav-note">Meet Shiro, explore adoption resources, and learn how to care for cats.</p>
+            </nav>
+
+            <main id="main-content">
+                <section class="welcome">
+                    <p class="eyebrow">Welcome to Shiro's world</p>
+                    <h2>Every cat deserves a place to call home.</h2>
+                    <p>Welcome to <strong>Shiro the Cat</strong>! This website is about my cat, Shiro, and the many kittens still waiting for a safe and loving home. I created it to share Shiro's story and help more people learn about fostering and adoption.</p>
+                </section>
+
+                <section class="feature" aria-labelledby="meet-shiro-title">
+                    <img class="shiro-photo" src="shiro1.jpeg" alt="Shiro, a white cat with green eyes, sitting on a glass table at home." width="928" height="1649">
+                    <div class="feature-text">
+                        <p class="eyebrow">Meet the inspiration</p>
+                        <h3 id="meet-shiro-title">Meet Shiro</h3>
+                        <p>Shiro is my family's cat and the reason I wanted to make this website. On the Shiro page, I'll share how my family adopted her, what she's like, and some of my favorite photos of her.</p>
+                        <p>Her story is a reminder of how much a cat can become part of a family.</p>
+                        <a class="text-link" href="shiro.html">Read Shiro's story <span aria-hidden="true">→</span></a>
+                    </div>
+                </section>
+
+                <section class="why-adopt" aria-labelledby="why-adopt-title">
+                    <p class="eyebrow">Why this matters</p>
+                    <h3 id="why-adopt-title">Why learn about fostering?</h3>
+                    <p>Many kittens, including stray kittens in the Philippines, need food, shelter, and care. Fostering can give them a safe temporary home while they get ready for adoption. Even if you cannot foster right now, learning about local rescue groups is a good first step.</p>
+                    <div class="info-grid">
+                        <article class="info-card">
+                            <span aria-hidden="true">🏠</span>
+                            <h4>A safe space</h4>
+                            <p>A foster home gives kittens somewhere protected to rest, grow, and feel comfortable.</p>
+                        </article>
+                        <article class="info-card">
+                            <span aria-hidden="true">❤️</span>
+                            <h4>A chance to help</h4>
+                            <p>Adoption, fostering, volunteering, and sharing reliable resources can all make a difference.</p>
+                        </article>
+                        <article class="info-card">
+                            <span aria-hidden="true">🐱</span>
+                            <h4>A lifelong friend</h4>
+                            <p>Caring for a cat takes patience and responsibility, but the bond can be very rewarding.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="next-step" aria-labelledby="next-step-title">
+                    <div>
+                        <h3 id="next-step-title">Want to help a kitten?</h3>
+                        <p>Explore what fostering involves and find resources to help you get started.</p>
+                    </div>
+                    <a class="button-link" href="foster.html">Explore fostering <span aria-hidden="true">→</span></a>
+                </section>
+
+                <p class="external-resource">For more information, visit <a href="https://www.kittenlady.org/fostering" target="_blank" rel="noopener noreferrer">Kitten Lady's fostering guide</a>.</p>
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Shiro the Cat. Made to share Shiro's story and encourage kitten care.</p>
+            <p><a href="mailto:hello@example.com">Contact (sample email)</a> <span aria-hidden="true">·</span> <a href="https://www.kittenlady.org/fostering" target="_blank" rel="noopener noreferrer">Fostering resources</a></p>
+        </footer>
+    </div>
 </body>
 </html>
