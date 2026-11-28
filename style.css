@@ -94,3 +94,36 @@ main { min-width: 0; padding: 39px 45px 45px; }
     .next-step { align-items: flex-start; flex-direction: column; }
     .site-footer { padding: 20px 24px; }
 }
+
+/* Foster Kittens page */
+.adoption-photo { margin: 0; }
+.adoption-photo .shiro-photo { height: 310px; }
+.adoption-photo figcaption { font-size: .82rem; color: var(--muted); margin-top: 8px; }
+.care-list { padding-left: 22px; }
+.care-list li { margin-bottom: 8px; }
+.adoption-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+.interest-section { margin-top: 30px; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: #f8faf7; }
+.interest-section h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; }
+.interest-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.interest-form label { display: block; font-size: .9rem; font-weight: bold; margin-bottom: 5px; }
+.interest-form input, .interest-form select, .interest-form textarea { width: 100%; padding: 10px; border: 1px solid #a6b9aa; border-radius: 7px; background: white; color: var(--foreground); font: inherit; }
+.interest-form textarea { resize: vertical; }
+.interest-form :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.full-field { grid-column: 1 / -1; }
+.form-note, #form-status { font-size: .85rem; color: var(--muted); }
+#form-status { margin: 10px 0 0; }
+.interest-form button { border: 0; cursor: pointer; font: inherit; font-weight: bold; }
+@media (max-width: 620px) {
+    .adoption-grid, .interest-form { grid-template-columns: 1fr; }
+    .interest-section { padding: 16px; }
+}
+
+/* Shiro photo gallery and kitten photograph */
+.photo-gallery { margin: 0 0 35px; }
+.photo-gallery h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; margin-bottom: 12px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.gallery-grid figure { margin: 0; }
+.gallery-grid img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); }
+.gallery-grid figcaption { font-size: .86rem; color: var(--muted); margin-top: 8px; }
+.kitten-photo { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); }
+@media (max-width: 620px) { .gallery-grid { grid-template-columns: 1fr; } }

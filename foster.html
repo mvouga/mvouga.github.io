@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about kitten fostering and adoption, preparing your home, and expressing interest through a sample form.">
+    <meta name="author" content="Mark Vouga">
+    <title>Foster Kittens | Shiro the Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div>
+                <p class="eyebrow">A little website with a big heart</p>
+                <h1>Shiro the Cat <span aria-hidden="true">🐾</span></h1>
+                <p class="tagline">Helping kittens find loving forever homes.</p>
+            </div>
+            <div class="header-cat" aria-hidden="true">🐈</div>
+        </header>
+
+        <div class="page-layout">
+            <nav class="site-nav" aria-label="Main navigation">
+                <h2>Explore the site</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shiro.html">Shiro</a></li>
+                    <li><a class="active" aria-current="page" href="foster.html">Foster Kittens</a></li>
+                    <li><a href="history.html">History of Cats</a></li>
+                    <li><a href="guide.html">A Guide to Cats</a></li>
+                </ul>
+                <p class="nav-note">Meet Shiro, explore adoption resources, and learn how to care for cats.</p>
+            </nav>
+
+            <main id="main-content">
+                <section class="welcome">
+                    <p class="eyebrow">Give a kitten a chance</p>
+                    <h2>Find your new best friend.</h2>
+                    <p>Many kittens in the Philippines and around the world need safe homes. Fostering provides temporary care while adoption gives a cat a permanent family.</p>
+                </section>
+                <section class="feature" aria-labelledby="adopt-title">
+                    <figure class="adoption-photo"><img class="kitten-photo" src="kittens.jpg" alt="Four kittens with orange, gray, tabby, and black-and-white coats sitting together outdoors." width="678" height="452"><figcaption>Four kittens together outdoors. Illustrative photograph, not an adoption listing.</figcaption></figure>
+                    <div class="feature-text"><h3 id="adopt-title">Why adopt a kitten?</h3><ul class="care-list"><li>Give a cat a loving forever home.</li><li>Support the work of animal rescue organizations.</li><li>Build a lifelong bond with a companion.</li></ul><p>If you are not ready for a permanent commitment, ask a local rescue about fostering.</p></div>
+                </section>
+                <section class="why-adopt"><h3>Getting started</h3><div class="adoption-grid">
+                    <article class="info-card"><h4>Prepare your home</h4><p>Set up a quiet space with age-appropriate food, water, bedding, and a litter box. Ask the rescue about the kitten's care needs.</p></article>
+                    <article class="info-card"><h4>How to adopt</h4><p>Contact a local shelter or rescue, meet available cats, and ask about its application process and veterinary care.</p></article>
+                </div></section>
+                <section class="interest-section" aria-labelledby="interest-title">
+                    <h3 id="interest-title">Kitten adoption interest form</h3>
+                    <p>Use this sample form to explore your interest in fostering or adopting. Required fields are marked with an asterisk (*).</p>
+                    <form class="interest-form" id="interest-form">
+                        <div><label for="name">Full name *</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+                        <div><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                        <div><label for="interest">I am interested in *</label><select id="interest" name="interest" required><option value="">Select an option</option><option>Fostering</option><option>Adopting</option><option>Both</option><option>Learning more</option></select></div>
+                        <div><label for="location">Location *</label><input id="location" name="location" type="text" placeholder="City or country" required></div>
+                        <div class="full-field"><label for="comments">Comments or questions</label><textarea id="comments" name="comments" rows="4"></textarea></div>
+                        <div class="full-field"><p class="form-note">Class project only. This form does not send or store your information.</p><button class="button-link" type="submit">Submit</button><p id="form-status" role="status"></p></div>
+                    </form>
+                    <script>
+                        document.getElementById('interest-form').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            document.getElementById('form-status').textContent = 'Thank you for your interest! This is a demo; no information was sent.';
+                        });
+                    </script>
+                </section>
+                <p class="external-resource">Learn more from <a href="https://www.kittenlady.org/fostering" target="_blank" rel="noopener noreferrer">Kitten Lady's fostering guide</a>, or contact a local animal rescue.</p>
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Shiro the Cat. Made to share Shiro's story and encourage kitten care.</p>
+            <p><a href="mailto:hello@example.com">Contact (sample email)</a> <span aria-hidden="true">·</span> <a href="https://www.kittenlady.org/fostering" target="_blank" rel="noopener noreferrer">Fostering resources</a></p>
+        </footer>
+    </div>
+</body>
+</html>
