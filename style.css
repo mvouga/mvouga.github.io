@@ -1,0 +1,129 @@
+/* Shiro the Cat — external stylesheet. Adjust these variables to match your preferred palette. */
+:root {
+    --background: #f7f8f4;
+    --foreground: #293a32;
+    --primary: #476e5b;
+    --secondary: #e8f0e8;
+    --accent: #e9a787;
+    --surface: #ffffff;
+    --border: #d7e2d8;
+    --muted: #607166;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+a { color: var(--primary); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.site-wrapper {
+    max-width: 1150px;
+    margin: 28px auto;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 38px rgba(31, 57, 42, 0.07);
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 42px;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--border);
+}
+h1, h2, h3, h4, p { margin-top: 0; }
+h1, h2, h3, h4 { line-height: 1.22; }
+h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 2.5rem; margin-bottom: 8px; }
+h1 span { font-size: 1.5rem; vertical-align: middle; }
+.tagline { color: var(--muted); margin-bottom: 0; }
+.eyebrow { color: var(--primary); font-size: .75rem; font-weight: bold; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+.header-cat { width: 82px; height: 82px; display: grid; place-items: center; flex-shrink: 0; border: 2px solid var(--border); background: white; border-radius: 22px; font-size: 3.3rem; }
+.page-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); }
+.site-nav { padding: 28px 20px; background-color: #f3f7f2; border-right: 1px solid var(--border); }
+.site-nav h2 { font-size: 1rem; margin: 0 0 15px; }
+.site-nav ul { list-style: none; padding: 0; margin: 0; }
+.site-nav li + li { margin-top: 9px; }
+.site-nav a { display: block; padding: 11px 13px; border: 1px solid var(--border); border-radius: 9px; color: var(--foreground); text-decoration: none; background: var(--surface); font-weight: bold; font-size: .9rem; }
+.site-nav a:hover, .site-nav a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.nav-note { margin: 30px 3px 0; font-size: .87rem; color: var(--muted); }
+main { min-width: 0; padding: 39px 45px 45px; }
+.welcome h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.9rem, 3.5vw, 2.65rem); max-width: 620px; }
+.welcome p:not(.eyebrow) { max-width: 700px; }
+.feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; align-items: center; margin: 30px 0 43px; }
+.shiro-photo { display: block; width: 100%; height: 410px; object-fit: cover; object-position: center 35%; border-radius: 12px; border: 1px solid var(--border); }
+.feature-text h3, .why-adopt h3, .next-step h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; margin-bottom: 12px; }
+.feature-text p { font-size: .95rem; }
+.text-link { font-weight: bold; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.why-adopt { border-top: 1px solid var(--border); padding-top: 29px; }
+.info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; margin-top: 24px; }
+.info-card { padding: 20px 16px; background: #f8faf7; border: 1px solid var(--border); border-radius: 12px; }
+.info-card > span { font-size: 1.6rem; }
+.info-card h4 { margin: 12px 0 8px; }
+.info-card p { font-size: .86rem; margin: 0; }
+.next-step { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 25px; margin-top: 29px; background-color: var(--secondary); border-radius: 12px; }
+.next-step h3 { font-size: 1.35rem; }
+.next-step p { margin-bottom: 0; font-size: .92rem; }
+.button-link { background: var(--primary); color: white; text-decoration: none; font-weight: bold; border-radius: 9px; padding: 12px 16px; white-space: nowrap; }
+.button-link:hover { background: #315541; }
+.external-resource { font-size: .9rem; margin: 23px 0 0; }
+.site-footer { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; padding: 18px 32px; border-top: 1px solid var(--border); background-color: #f8faf7; color: var(--muted); font-size: .8rem; }
+.site-footer p { margin: 0; }
+@media (max-width: 850px) {
+    .site-wrapper { margin: 0; border: none; border-radius: 0; }
+    .page-layout { grid-template-columns: 1fr; }
+    .site-nav { border-right: 0; border-bottom: 1px solid var(--border); padding: 18px 24px; }
+    .site-nav ul { display: flex; flex-wrap: wrap; gap: 8px; }
+    .site-nav li + li { margin-top: 0; }
+    .nav-note { margin-top: 14px; }
+    main { padding: 30px 24px; }
+}
+@media (max-width: 620px) {
+    .site-header { padding: 23px 22px; }
+    h1 { font-size: 2rem; }
+    .header-cat { width: 62px; height: 62px; font-size: 2.4rem; }
+    .feature, .info-grid { grid-template-columns: 1fr; }
+    .shiro-photo { height: 360px; }
+    .next-step { align-items: flex-start; flex-direction: column; }
+    .site-footer { padding: 20px 24px; }
+}
+
+/* Foster Kittens page */
+.adoption-photo { margin: 0; }
+.adoption-photo .shiro-photo { height: 310px; }
+.adoption-photo figcaption { font-size: .82rem; color: var(--muted); margin-top: 8px; }
+.care-list { padding-left: 22px; }
+.care-list li { margin-bottom: 8px; }
+.adoption-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+.interest-section { margin-top: 30px; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: #f8faf7; }
+.interest-section h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; }
+.interest-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.interest-form label { display: block; font-size: .9rem; font-weight: bold; margin-bottom: 5px; }
+.interest-form input, .interest-form select, .interest-form textarea { width: 100%; padding: 10px; border: 1px solid #a6b9aa; border-radius: 7px; background: white; color: var(--foreground); font: inherit; }
+.interest-form textarea { resize: vertical; }
+.interest-form :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.full-field { grid-column: 1 / -1; }
+.form-note, #form-status { font-size: .85rem; color: var(--muted); }
+#form-status { margin: 10px 0 0; }
+.interest-form button { border: 0; cursor: pointer; font: inherit; font-weight: bold; }
+@media (max-width: 620px) {
+    .adoption-grid, .interest-form { grid-template-columns: 1fr; }
+    .interest-section { padding: 16px; }
+}
+
+/* Shiro photo gallery and kitten photograph */
+.photo-gallery { margin: 0 0 35px; }
+.photo-gallery h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; margin-bottom: 12px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.gallery-grid figure { margin: 0; }
+.gallery-grid img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); }
+.gallery-grid figcaption { font-size: .86rem; color: var(--muted); margin-top: 8px; }
+.kitten-photo { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); }
+@media (max-width: 620px) { .gallery-grid { grid-template-columns: 1fr; } }
